@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "PlayFair Display", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(201, 160, 221);
+}
+
+.container {
+  min-height: 150px;
+  width: 500px;
+  background: #fff;
+  margin: 200px auto;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: #1da1f2;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container p#quote {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.container p#name {
+  text-align: end;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.container span {
+  color: #1da1f2;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#new-quote-btn {
+  background: #1da1f2;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#new-quote-btn:hover {
+  background: #0e95e9;
+}
+
+#tweet-btn {
+  cursor: pointer;
+  background: #fff;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #1da1f2;
+  border: 1px solid black;
+}
+
+#tweet-btn:hover {
+  background: #efefef;
+}
+
+#tweet-btn img {
+  width: 15px;
+  margin-right: 5px;
+}
